@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width initial-scale=0">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="STYLE.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a href="file:///C:/Users/ethan/Downloads/Base%20idea/INDEX.html">
+				<div class="logo">
+					<a href="file:///C:/Users/ethan/Downloads/Base%20idea/INDEX.html">
+						<img src="images/logoV4.png" width="425px">
+					</a>
+				</div>
+			</a>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="file:///C:/Users/ethan/Downloads/Base%20idea/INDEX.html">HOME</a></li>
+					<li><a href="">SELL</a></li>
+					<li><a href="">BUY</a></li>
+					<li><a href="">EXCHANGE</a></li>
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">CONTACT US</a></li>
+					<li><a href="">ACCOUNT</a></li>
+				</ul>
+			</nav>
+			<a href="file:///C:/Users/ethan/Downloads/Base%20idea/Shopping%20Cart.html">
+				<img src="images/cart.png" width="40px" height="40px">
+			</a>
+			<img src="../RedStore_Img/images/menu.png" class="menu-icon" onClick="menutoggle()">
+		</div>	
+	</div>
+<!----title---->
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Related products</h2>
+			<p>View more</p>
+		</div>
+	</div>
+<!----cart item details---->
+	<div class="small-container cart-page">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/focus/Product-5.jpg">
+						<div>
+							<p>Roses shirt</p>
+							<small>Price: $67.00</small>
+							<br>
+							<a>Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$67.00</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/focus/Product-51.png">
+						<div>
+							<p>Roses shirt</p>
+							<small>Price: $67.00</small>
+							<br>
+							<a>Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$67.00</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/focus/Product-52.png">
+						<div>
+							<p>Roses shirt</p>
+							<small>Price: $67.00</small>
+							<br>
+							<a>Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$67.00</td>
+			</tr>
+		</table>
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>subtotal</td>
+					<td>$201.00</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td>$33.00</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>$234.00</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+<!--------FOOTER-------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our app!</h3>
+					<p>Available on both IOS and android mobile phones.</p>
+					<div class="app-logo">
+						<img src="../RedStore_Img/images/play-store.png">
+						<img src="../RedStore_Img/images/app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/logoV3.png">
+					<p>We're here to help you find the product you desire at the expense of another that intends on giving their products away</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Newsletter</li>
+						<li>Blog Posts</li>
+						<li>Terms and conditions</li>
+						<li>Fair trade policies</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Join out social media pages!</h3>
+					<ul>
+						<li>Instagram</li>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright© 2021 The trash team-BIN</p>
+		</div>
+	</div>
+<!----Js for toggle menue---->
+	<script>
+		var MenuItems=document.getElementById("MenuItems");
+		MenuItems.style.maxHeight="0px";
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+				{
+					MenuItems.style.maxHeight="200px"
+				}
+			else
+				{
+					MenuItems.style.maxHeight="0px"
+				}
+		}
+	</script>
+</body>
+</html>
